@@ -1,35 +1,20 @@
 <html>
 	<head>
+		<style>
+			.blockmargin { display: block; margin-bottom: 10px; }
+		</style>
 	</head>
 	<body>
-		<form action="https://formspree.io/jacobsgirlsbuenogalore@sogetthis.com" method="POST">
-			<div>
-				Name: <input type="text" name="name">
-				Email: <input type="email" name="_replyto">
+		<form method='POST' action='https://formspree.io/jacobsgirlsbuenogalore@sogetthis.com'>
+			<div class='blockmargin'>
+				<input name='name' type='text' placeholder='your name' style='width:160px;'><br>
+				<input name='email' type='email' placeholder='your email' style='width:160px;'>
 			</div>
-			<div>
-				Gender:
-				<select>
-					<option name="gender" value="Mr">Mr</option>
-					<option name="gender" value="Ms" selected>Ms</option>
-				</select>
+			<div class='blockmargin'>
+				<textarea name='message' placeholder='your message' style='width:160px; height:240px;'></textarea>
 			</div>
-			<div>
-				Nature:
-				<select>
-					<option name="nature" value="Question">Question</option>
-					<option name="nature" value="Comment" selected>Comment</option>
-				</select>
-			</div>
-			<div>
-				Urgency:
-				<input type="checkbox" name="urgent" value="Yes">Urgent<br>
-			</div>
-			<div>
-				<textarea name="body"></textarea>
-			</div>
-			<div>
-				<input type="submit" value="Send">
+			<div class='blockmargin'>
+				<button type='submit'>Send</button>
 			</div>
 		</form>
 	</body>
