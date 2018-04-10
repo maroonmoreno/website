@@ -4,8 +4,26 @@
 	<body>
 		<form action="https://formspree.io/jacobsgirlsbuenogalore@sogetthis.com" method="POST">
 			<div>
-				Name <input type="text" name="name">
-				Email <input type="email" name="_replyto">
+				Name: <input type="text" name="name">
+				Email: <input type="email" name="_replyto">
+			</div>
+			<div>
+				Gender:
+				<select>
+					<option name="gender" value="Mr">Mr</option>
+					<option name="gender" value="Ms" selected>Ms</option>
+				</select>
+			</div>
+			<div>
+				Nature:
+				<select>
+					<option name="nature" value="Question">Question</option>
+					<option name="nature" value="Comment" selected>Comment</option>
+				</select>
+			</div>
+			<div>
+				Urgency:
+				<input type="checkbox" name="urgent" value="Yes">Urgent<br>
 			</div>
 			<div>
 				<textarea name="body"></textarea>
